@@ -1,28 +1,68 @@
+*{
+     box-sizing: border-box;
+}
+
 body{
      background-color: #222;
      color: #fff;
+     margin: 0;
 }
 
-.search ,.results{
+.hidden{
+     display: none;
+}
+.overlay{
+     position: absolute;
+     top: 0;
+     left: 0;
+     min-height: 100%;
+     width: 100%;
+     background: rgba(0,0,0 , .5);
+}
+
+.App{
+     /*padding: 1% 10%;*/
+}
+.search{
+     position: relative;
+     text-align: center;
+     min-height: 400px;
+     margin-bottom: 25px;
+     background: url('../public/bgPoster-2.jpg') center;
+     background-size: cover;
+
+}
+
+.search .overlay{
+     padding-top: 150px;
+}
+.jobname, .location, .country{
+     padding: 10px;
+     margin: 5px;
+     min-width: 35%;
+}
+
+#searchButton{
+     padding: 11px 20px;
+     background-color: #58bb2c;
+     border: 0;
+}
+
+#searchButton i{
+     color: white;
+}
+
+ button,
+ select {
+    /*width: 106% !important;*/
+}
+
+
+.results{
      margin: auto;
      width: 420px;
      text-align: center;
      word-wrap: break-word;
-}
-
-.search input,
-.search button,
-.search select {
-     /*display: block;*/
-     padding: 10px;
-     margin: 10px 0;
-     width: 100%;
-}
-
-
- button,
- select {
-    width: 106% !important;
 }
 
 .results button {
