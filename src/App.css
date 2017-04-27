@@ -60,7 +60,6 @@ body{
 
 .results{
      margin: auto;
-     width: 420px;
      text-align: center;
      word-wrap: break-word;
 }
@@ -71,4 +70,13 @@ body{
 }
 .results button:first-of-type{
      margin: 15px 9%;
+}
+
+.job{
+     display: inline-block;
+     width: 49%;
+     margin-top: 50px;
+     border: 1px solid white;
+     min-height: 300px;
+    vertical-align: top;
 }

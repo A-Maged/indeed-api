@@ -351,24 +351,25 @@ class App extends Component {
 
                 <div className="results">
 
-                     <button className={ this.state.start ? "" : "hidden" } onClick={ () => this.prev()}>prev</button>
-                     <button className={ this.state.jobs.length > 0 ? "" : "hidden" } onClick={ () => this.next()}>next</button>
+                     <div>
+                          <button className={ this.state.start ? "" : "hidden" } onClick={ () => this.prev()}>prev</button>
+                          <button className={ this.state.jobs.length > 0 ? "" : "hidden" } onClick={ () => this.next()}>next</button>
+                     </div>
 
                      {
                           this.state.jobs.map( (value,index)=>{
                                return(
-                                    <div key={index} >
-                                        <h4  > <a href={value.url} target="_blank"> job title : {value.jobtitle} </a> </h4>
-                                        <h4  > city : {value.city} </h4>
-                                        <h4  > country : {value.country} </h4>
-                                        <h4  > date : {value.date} </h4>
-                                        <h4  > RelativeTime : {value.formattedRelativeTime} </h4>
-                                        <h4  > snippet : {value.snippet} </h4>
-                                        <hr/>
+                                    <div key={index} className="job">
+                                        <h4  > <a href={value.url} target="_blank"> TITLE : {value.jobtitle} </a> </h4>
+                                        <h4  > Location : {value.city}, {value.country} </h4>
+                                        <h4  > DATE : {value.date} </h4>
+                                        <h4  > POSTED : {value.formattedRelativeTime} </h4>
+                                        <h4  > DESCRIPTION : {value.snippet} </h4>
                                     </div>
                                )
                           })
                      }
+
 
 
                 </div>
