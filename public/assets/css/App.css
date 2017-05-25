@@ -28,7 +28,7 @@ body{
      text-align: center;
      min-height: 400px;
      margin-bottom: 25px;
-     background: url('bgPoster-2.jpg') center;
+     background: url('../images/bgPoster-2.jpg') center;
      background-size: cover;
 
 }
