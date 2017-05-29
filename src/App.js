@@ -139,7 +139,7 @@ class App extends Component {
                      		<option value="CD">Congo, the Democratic Republic of the</option>
                      		<option value="CK">Cook Islands</option>
                      		<option value="CR">Costa Rica</option>
-                     		<option value="CI">Côte d'Ivoire</option>
+                     		<option value="CI">Côte d\'Ivoire</option>
                      		<option value="HR">Croatia</option>
                      		<option value="CU">Cuba</option>
                      		<option value="CW">Curaçao</option>
@@ -206,7 +206,7 @@ class App extends Component {
                      		<option value="KR">Korea, Republic of</option>
                      		<option value="KW">Kuwait</option>
                      		<option value="KG">Kyrgyzstan</option>
-                     		<option value="LA">Lao People's Democratic Republic</option>
+                     		<option value="LA">Lao People\'s Democratic Republic</option>
                      		<option value="LV">Latvia</option>
                      		<option value="LB">Lebanon</option>
                      		<option value="LS">Lesotho</option>
